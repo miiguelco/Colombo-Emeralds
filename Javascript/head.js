@@ -1,12 +1,12 @@
 const renderer = new THREE.WebGLRenderer({
   antialias: true
 })
-renderer.setSize(window.innerWidth, window.innerHeight) // sets the renderer size to window size
+renderer.setSize(400, 400) // sets the renderer size to window size
 renderer.setPixelRatio(window.devicePixelRatio) // sets the pixel whatever the device is
 renderer.setClearColor(0x070000) // renderer color
 
 // ADD RENDERER TO ELEMENT
-const sectionTag = document.querySelector("section")
+const sectionTag = document.querySelector(".head-container")
 sectionTag.appendChild(renderer.domElement)
 
 // ADD SCENE
@@ -14,7 +14,7 @@ const scene = new THREE.Scene()
 
 
 // ADD CAMERA
-const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 10000)
+const camera = new THREE.PerspectiveCamera(40, 400 / 400, 0.1, 10000)
 camera.position.z = -70 // changes the position of the camera in the Z axis
 camera.position.x = 20
 
@@ -54,8 +54,8 @@ animate() // strats the function
 
 // ADD RESIZE EVENT
 window.addEventListener ("resize", function () {
-  camera.aspect = window.innerWidth / window.innerHeight
+  camera.aspect = 400 / 400
   camera.updateProjectionMatrix() // tells the camera to re-focus on certain things
 
-  renderer.setSize(window.innerWidth, window.innerHeight)
+  renderer.setSize(400, 400)
 })
