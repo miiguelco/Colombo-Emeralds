@@ -1,0 +1,35 @@
+* {
+  margin:0; padding:0; box-sizing:border-box;
+}
+
+
+body {
+  overflow: hidden;
+}
+
+canvas { width: 100%; height: 100% }
+
+#main-cover {
+  width: auto;
+  height: 625px;
+  background: black;
+  display: grid;
+  grid-template-columns: 140px 1000px 140px;
+}
+
+#main-cover .left-side {
+  background: blue;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#main-cover .center {
+  background: black;
+}
+
+
+#main-cover .right-side {
+  background: yellow;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+}
