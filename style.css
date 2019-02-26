@@ -4,8 +4,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
 a {
@@ -106,7 +106,7 @@ a {
     width: 800px;
     height: 410px;
     margin: 10px auto 0 auto;
-    opacity: 0;
+    opacity: 1;
 }
 
 .work-slider-2015 .slide {
@@ -171,6 +171,80 @@ a {
     cursor: pointer;
   }
 
+  /* SLIDER 2016 */
+
+  .work-slider-2016 {
+     width: 800px;
+     height: 410px;
+     margin: 30px auto 0 auto;
+     opacity: 1;
+     position: relative;
+     bottom: 439px;
+  }
+
+  .work-slider-2016 .slide-2016 {
+   width: 790px;
+   height: 410px;
+   margin: 10px auto 0 auto;
+   opacity: 1;
+  }
+
+  .work-slider-2016 .slide-2016 .img-container-2016 {
+   width: 400px;
+   height: 400px;
+   margin: auto;
+   border: 3px solid white;
+   -webkit-box-shadow: 0px 2px 27px -5px rgba(0,0,0,1);
+   -moz-box-shadow: 0px 2px 27px -5px rgba(0,0,0,1);
+   box-shadow: 0px 2px 27px -5px rgba(0,0,0,1);
+   }
+
+   .work-slider-2016 .slide-2016  img {
+     width: 100%;
+     height: 100%;
+   }
+
+
+   .work-slider-2016 .slide-2016 .legend-arrows-wrapper-2016 {
+     width: 400px;
+     height: 50px;
+     margin: 0 auto;
+     text-align: center;
+   }
+
+   .work-slider-2016 .slide-2016 .left-arrow-2016 {
+     display: inline;
+     margin-right: 15px;
+     float: left;
+     padding-left: 15px;
+     cursor: pointer;
+   }
+
+  .work-slider-2016 .slide-2016  .legend-arrows-wrapper-2016 .paragraph-wrapper-2016 {
+   height: 30px;
+   display: inline-block;
+   padding: 10px;
+  }
+
+
+   .work-slider-2016 .slide-2016 p {
+     display: inline;
+     text-align: center;
+     color: white;
+     font-family: 'Share Tech Mono', monospace;
+     font-weight: 100;
+     margin-right: 15px;
+
+   }
+
+   .work-slider-2016 .slide-2016 .right-arrow-2016 {
+     display: inline;
+     float: right;
+     padding-right: 15px;
+     cursor: pointer;
+   }
+
+   /* WORK SLIDER 2017 */
 
   .item-6 {
     background: #E84526;
