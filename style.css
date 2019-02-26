@@ -70,6 +70,7 @@ a {
 .item-2 h1 {
   font-size: 20px;
   margin-top: 35px;
+  cursor: default;
 }
 
 .item-4 {
@@ -86,7 +87,8 @@ a {
 .item-4 .a {
   margin-top: 12px;
   font-size: 14px;
-      padding-left: 42px;
+  padding-left: 42px;
+  cursor: pointer;
 }
 
 .item-5 {
@@ -171,4 +173,29 @@ a {
   @keyframes height {
     from {height: 0;}
       to {height: 430px;}
+    }
+
+    .item-8 {
+      background: #E84526;
+      text-align: center;
+      padding-top: 35px;
+    }
+
+    .item-8 .song-playing {
+      display: inline;
+      position: absolute;
+      visibility: hidden;
+      animation: pulse 3s ease-in-out 2s infinite alternate;
+  }
+  @keyframes pulse {
+    0% {
+      color: #ffffff;
+    }
+    100% {
+      color: #E84526;
+    }
+  }
+
+    .item-8 a {
+      font-size: 10px;
     }

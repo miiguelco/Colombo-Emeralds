@@ -38,8 +38,16 @@
             <div class="line"></div>
         </div>
         <div class="item"><a href="#">Mail</a></div>
-        <div class="item"><i class="fas fa-play" style="font-size:30px"></i></div>
-        <div class="item"><a href="#">Social</a></div>
+        <div class="item-8">
+            <i class="fas fa-play" style="font-size:30px; cursor: pointer; position: relative; position: relative;left: 20px;"></i>
+            <i class="fas fa-pause" style="font-size:30px; cursor: pointer; position: relative; right: 10px;position: relative;right: 20px; visibility: hidden"></i>
+            <div class="song-playing">
+                <a href="https://soundcloud.com/wolfgang_voigt" target="_blank">playing: Gas - Pop 1</a>
+            </div>
+        </div>
+        <div class="item">
+            <a href="https://www.instagram.com/colomboemeralds/" target="_blank">Social</a>
+        </div>
   </div>
   <div class="work-slider">
       <div class="slide-1">
@@ -53,6 +61,7 @@
           </div>
       </div>
   </div>
+  <audio id="play" src="audio/Gas-Pop1.mp3"> </audio>
 
   <script src= "Javascript/three.min.js"></script>
   <script src= "Javascript/objloader.js" ></script> <!-- needs to go between three.min and cat.js because we want three js to use these loaders on our JS file  -->
