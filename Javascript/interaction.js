@@ -2,6 +2,36 @@
 
 // TRANSITIONS BETWEEN WORKS .............................................
 
+// Heading colombo
+
+const heading = document.querySelector('.heading').addEventListener('click', showCanvas);
+
+function showCanvas() {
+
+  canvasScene.style.transition = "all .9s ease-out .8s";
+  canvasScene.style.opacity = "1";
+  canvasScene.style.visibility = "visible";
+
+  work2015Selected.style.color = "rgb(249, 245, 229)";
+  work2015Selected.style.transition = "all .6s ease-in .5s";
+  work2016Selected.style.color = "rgb(249, 245, 229)";
+  work2016Selected.style.transition = "all .6s ease-in .5s";
+  work2017Selected.style.color = "rgb(249, 245, 229)";
+  work2017Selected.style.transition = "all .6s ease-in .5s";
+
+  sliderWork2015.style.opacity = "0";
+  sliderWork2015.style.transition = "all .3s ease-in .4s";
+  sliderWork2016.style.opacity = "0";
+  sliderWork2016.style.transition = "opacity .3s ease-out .4s";
+  sliderWork2017.style.opacity = "0";
+  sliderWork2017.style.transition = "opacity .3s ease-out .4s";
+
+  arrowsWrapper.style.visibility = "hidden";
+  arrowsWrapperTwo.style.visibility = "hidden";
+  arrowsWrapperThree.style.visibility = "hidden";
+
+}
+
 //2015
 const work2015 = document.querySelector('.link-2015').addEventListener('click', showSlider2015);
 const work2015Selected = document.querySelector('.link-2015');
@@ -11,7 +41,7 @@ const sliderWork2015 = document.querySelector('.work-slider-2015');
 const arrowsWrapper = document.querySelector('.legend-arrows-wrapper');
 
 function showSlider2015() {
-   canvasScene.style.transition = "all .4s ease-out .4s";
+   canvasScene.style.transition = "all .3s ease-out .3s";
    canvasScene.style.opacity = "0";
    canvasScene.style.visibility = "hidden";
 
@@ -26,9 +56,9 @@ function showSlider2015() {
    sliderWork2015.style.opacity = "1";
    sliderWork2015.style.transition = "all .6s ease-in .5s";
    sliderWork2016.style.opacity = "0";
-   sliderWork2016.style.transition = "opacity .3s ease-out .3s";
+   sliderWork2016.style.transition = "opacity .4s ease-out .4s";
    sliderWork2017.style.opacity = "0";
-   sliderWork2017.style.transition = "opacity .3s ease-out .3s";
+   sliderWork2017.style.transition = "opacity .4s ease-out .4s";
 
    arrowsWrapper.style.visibility = "visible";
    arrowsWrapperTwo.style.visibility = "hidden";
@@ -43,7 +73,7 @@ function showSlider2015() {
  const arrowsWrapperTwo = document.querySelector('.legend-arrows-wrapper-2016');
 
  function showSlider2016() {
-    canvasScene.style.transition = "all .4s ease-out .4s";
+    canvasScene.style.transition = "all .3s ease-out .3s";
     canvasScene.style.opacity = "0";
     canvasScene.style.visibility = "hidden";
 
@@ -55,12 +85,12 @@ function showSlider2015() {
     work2017Selected.style.transition = "all .6s ease-in .5s";
 
     sliderWork2015.style.opacity = "0";
-    sliderWork2015.style.transition = "opacity .3s ease-out .3s";
+    sliderWork2015.style.transition = "opacity .4s ease-out .4s";
     sliderWork2016.style.transform = "translateY(-540px)";
     sliderWork2016.style.opacity = "1";
     sliderWork2016.style.transition = "all .6s ease-in .5s";
     sliderWork2017.style.opacity = "0";
-    sliderWork2017.style.transition = "opacity .3s ease-out .3s";
+    sliderWork2017.style.transition = "opacity .4s ease-out .4s";
 
     arrowsWrapper.style.visibility = "hidden";
     arrowsWrapperTwo.style.visibility = "visible";
@@ -74,7 +104,7 @@ function showSlider2015() {
   const arrowsWrapperThree = document.querySelector('.legend-arrows-wrapper-2017');
 
   function showSlider2017() {
-     canvasScene.style.transition = "all .4s ease-out .4s";
+     canvasScene.style.transition = "all .3s ease-out .3s";
      canvasScene.style.opacity = "0";
      canvasScene.style.visibility = "hidden";
 
@@ -90,9 +120,9 @@ function showSlider2015() {
      sliderWork2017.style.transition = "all .6s ease-in .5s";
 
      sliderWork2015.style.opacity = "0";
-     sliderWork2015.style.transition = "opacity .3s ease-out .3s";
+     sliderWork2015.style.transition = "opacity .4s ease-out .4s";
      sliderWork2016.style.opacity = "0";
-     sliderWork2016.style.transition = "opacity .3s ease-out .3s";
+     sliderWork2016.style.transition = "opacity .4s ease-out .4s";
 
      arrowsWrapper.style.visibility = "hidden";
      arrowsWrapperTwo.style.visibility = "hidden";
