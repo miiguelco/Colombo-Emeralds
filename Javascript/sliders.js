@@ -129,3 +129,67 @@ rightSideArrowTwo.addEventListener('click', function () {
 });
 
 strartSlideTwo();
+
+
+// 2017
+let slidesThree = document.getElementsByClassName('img-container-2017'); // selects all images 2017
+let leftSideArrowThree = document.querySelector('.left-arrow-2017'); // Select left side arrow icon
+let rightSideArrowThree = document.querySelector('.right-arrow-2017'); // Select right side arrow icon
+let imageLegendThree = document.getElementsByClassName('paragraph-container-2017'); // selects all para 2015
+let currentThree = 0; // Represents the image we are on, and it's 0 by default
+
+// Clears all images
+function resetThree() {
+  for (let i = 0; i < slidesThree.length; i++) {
+    slidesThree[i].style.display = 'none';
+  }
+  for (let i = 0; i < imageLegendThree.length; i++) {
+    imageLegendThree[i].style.display = 'none';
+  }
+}
+
+// Initializes the slider, after reseting the images and calls the first one.
+function strartSlideThree() {
+  resetThree();
+  slidesThree[0].style.display = 'block';
+  imageLegendThree[0].style.display = 'block';
+}
+
+// Show previous image
+function slideLeftThree() {
+  resetThree();
+  slidesThree[currentThree - 1].style.display = 'block';
+  imageLegendThree[currentThree - 1].style.display = 'block';
+  currentThree--;
+}
+
+// Show next image
+function slideRightThree() {
+  resetThree();
+  slidesThree[currentThree + 1].style.display = 'block';
+  imageLegendThree[currentThree + 1].style.display = 'block';
+  currentThree++;
+}
+
+// Left arrow click event
+leftSideArrowThree.addEventListener('click', function () {
+  if (currentThree === 0) {
+    currentThree = slidesThree.length;
+    currentThree = imageLegendThree.length;
+  }
+  slideLeftThree();
+});
+
+
+// Right arrow click event
+rightSideArrowThree.addEventListener('click', function () {
+  if (currentThree === slidesThree.length - 1) {
+    currentThree = -1;
+  }
+  if (currentThree === imageLegendThree.length - 1) {
+    currentThree = -1;
+  }
+  slideRightThree();
+});
+
+strartSlideThree();
