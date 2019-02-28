@@ -24,6 +24,8 @@ function showCanvas() {
   workAcidSelected.style.transition = "all .6s ease-in .5s";
   workPortraitsSelected.style.color = "rgb(249, 245, 229)";
   workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+  aboutSelected.style.color = "rgb(249, 245, 229)";
+  aboutSelected.style.transition = "all .6s ease-in .5s";
 
   sliderWork2015.style.opacity = "0";
   sliderWork2015.style.transition = "all .3s ease-in .4s";
@@ -37,6 +39,8 @@ function showCanvas() {
   sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
   sliderPortraitsWork.style.opacity = "0";
   sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+  sliderAbout.style.opacity = "0";
+  sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
   arrowsWrapper.style.visibility = "hidden";
   arrowsWrapperTwo.style.visibility = "hidden";
@@ -72,6 +76,8 @@ function showSlider2015() {
    workAcidSelected.style.transition = "all .6s ease-in .5s";
    workPortraitsSelected.style.color = "rgb(249, 245, 229)";
    workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+   aboutSelected.style.color = "rgb(249, 245, 229)";
+   aboutSelected.style.transition = "all .6s ease-in .5s";
 
    sliderWork2015.style.transform = "translateY(-540px)";
    sliderWork2015.style.opacity = "1";
@@ -87,6 +93,8 @@ function showSlider2015() {
    sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
    sliderPortraitsWork.style.opacity = "0";
    sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+   sliderAbout.style.opacity = "0";
+   sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
    arrowsWrapper.style.visibility = "visible";
    arrowsWrapperTwo.style.visibility = "hidden";
@@ -120,6 +128,8 @@ function showSlider2015() {
     workAcidSelected.style.transition = "all .6s ease-in .5s";
     workPortraitsSelected.style.color = "rgb(249, 245, 229)";
     workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+    aboutSelected.style.color = "rgb(249, 245, 229)";
+    aboutSelected.style.transition = "all .6s ease-in .5s";
 
     sliderWork2015.style.opacity = "0";
     sliderWork2015.style.transition = "opacity .4s ease-out .4s";
@@ -134,6 +144,8 @@ function showSlider2015() {
     sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
     sliderPortraitsWork.style.opacity = "0";
     sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+    sliderAbout.style.opacity = "0";
+    sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
     arrowsWrapper.style.visibility = "hidden";
     arrowsWrapperTwo.style.visibility = "visible";
@@ -166,6 +178,8 @@ function showSlider2015() {
      workAcidSelected.style.transition = "all .6s ease-in .5s";
      workPortraitsSelected.style.color = "rgb(249, 245, 229)";
      workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+     aboutSelected.style.color = "rgb(249, 245, 229)";
+     aboutSelected.style.transition = "all .6s ease-in .5s";
 
      sliderWork2017.style.transform = "translateY(-540px)";
      sliderWork2017.style.opacity = "1";
@@ -181,6 +195,8 @@ function showSlider2015() {
      sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
      sliderPortraitsWork.style.opacity = "0";
      sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+     sliderAbout.style.opacity = "0";
+     sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
      arrowsWrapper.style.visibility = "hidden";
      arrowsWrapperTwo.style.visibility = "hidden";
@@ -215,6 +231,8 @@ function showSlider2015() {
       workAcidSelected.style.transition = "all .6s ease-in .5s";
       workPortraitsSelected.style.color = "rgb(249, 245, 229)";
       workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+      aboutSelected.style.color = "rgb(249, 245, 229)";
+      aboutSelected.style.transition = "all .6s ease-in .5s";
 
       sliderWorkClients.style.transform = "translateY(-540px)";
       sliderWorkClients.style.opacity = "1";
@@ -230,6 +248,8 @@ function showSlider2015() {
       sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
       sliderPortraitsWork.style.opacity = "0";
       sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+      sliderAbout.style.opacity = "0";
+      sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
       arrowsWrapper.style.visibility = "hidden";
       arrowsWrapperTwo.style.visibility = "hidden";
@@ -263,6 +283,8 @@ function showSlider2015() {
       workAcidSelected.style.transition = "all .6s ease-in .5s";
       workPortraitsSelected.style.color = "rgb(249, 245, 229)";
       workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+      aboutSelected.style.color = "rgb(249, 245, 229)";
+      aboutSelected.style.transition = "all .6s ease-in .5s";
 
       sliderAcidWork.style.transform = "translateY(-540px)";
       sliderAcidWork.style.opacity = "1";
@@ -278,6 +300,8 @@ function showSlider2015() {
       sliderWorkClients.style.transition = "opacity .4s ease-out .4s";
       sliderPortraitsWork.style.opacity = "0";
       sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+      sliderAbout.style.opacity = "0";
+      sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
       arrowsWrapper.style.visibility = "hidden";
       arrowsWrapperTwo.style.visibility = "hidden";
@@ -312,6 +336,8 @@ function showSlider2015() {
        workAcidSelected.style.transition = "all .6s ease-in .5s";
        workPortraitsSelected.style.color = "rgb(250, 145, 145)";
        workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+       aboutSelected.style.color = "rgb(249, 245, 229)";
+       aboutSelected.style.transition = "all .6s ease-in .5s";
 
        sliderPortraitsWork.style.transform = "translateY(-540px)";
        sliderPortraitsWork.style.opacity = "1";
@@ -327,6 +353,8 @@ function showSlider2015() {
        sliderWorkClients.style.transition = "opacity .4s ease-out .4s";
        sliderAcidWork.style.opacity = "0";
        sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
+       sliderAbout.style.opacity = "0";
+       sliderAbout.style.transition = "opacity .4s ease-out .4s";
 
        arrowsWrapper.style.visibility = "hidden";
        arrowsWrapperTwo.style.visibility = "hidden";
@@ -335,3 +363,54 @@ function showSlider2015() {
        arrowsWrapperFive.style.visibility = "hidden";
        arrowsWrapperSix.style.visibility = "visible";
      }
+
+
+     // ABOUT PANEL
+     const aboutPanel = document.querySelector('.link-about').addEventListener('click', showSliderAbout);
+     const aboutSelected = document.querySelector('.link-about');
+     const sliderAbout = document.querySelector('.about');
+
+     function showSliderAbout() {
+        canvasScene.style.transition = "all .3s ease-out .3s";
+        canvasScene.style.opacity = "0";
+        canvasScene.style.visibility = "hidden";
+
+        work2015Selected.style.color = "rgb(249, 245, 229)";
+        work2015Selected.style.transition = "all .6s ease-in .5s";
+        work2016Selected.style.color = "rgb(249, 245, 229)";
+        work2016Selected.style.transition = "all .6s ease-in .5s";
+        work2017Selected.style.color = "rgb(249, 245, 229)";
+        work2017Selected.style.transition = "all .6s ease-in .5s";
+        workClientsSelected.style.color = "rgb(249, 245, 229)";
+        workClientsSelected.style.transition = "all .6s ease-in .5s";
+        workAcidSelected.style.color = "rgb(249, 245, 229)";
+        workAcidSelected.style.transition = "all .6s ease-in .5s";
+        workPortraitsSelected.style.color = "rgb(249, 245, 229)";
+        workPortraitsSelected.style.transition = "all .6s ease-in .5s";
+        aboutSelected.style.color = "rgb(250, 145, 145)";
+        aboutSelected.style.transition = "all .6s ease-in .5s";
+
+        sliderAbout.style.transform = "translateY(-540px)";
+        sliderAbout.style.opacity = "1";
+        sliderAbout.style.transition = "all .6s ease-in .5s";
+
+        sliderWork2015.style.opacity = "0";
+        sliderWork2015.style.transition = "opacity .4s ease-out .4s";
+        sliderWork2016.style.opacity = "0";
+        sliderWork2016.style.transition = "opacity .4s ease-out .4s";
+        sliderWork2017.style.opacity = "0";
+        sliderWork2017.style.transition = "opacity .4s ease-out .4s";
+        sliderWorkClients.style.opacity = "0";
+        sliderWorkClients.style.transition = "opacity .4s ease-out .4s";
+        sliderAcidWork.style.opacity = "0";
+        sliderAcidWork.style.transition = "opacity .4s ease-out .4s";
+        sliderPortraitsWork.style.opacity = "0";
+        sliderPortraitsWork.style.transition = "opacity .4s ease-out .4s";
+
+        arrowsWrapper.style.visibility = "hidden";
+        arrowsWrapperTwo.style.visibility = "hidden";
+        arrowsWrapperThree.style.visibility = "hidden";
+        arrowsWrapperFour.style.visibility = "hidden";
+        arrowsWrapperFive.style.visibility = "hidden";
+        arrowsWrapperSix.style.visibility = "hidden";
+      }

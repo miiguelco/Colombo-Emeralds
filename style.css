@@ -42,6 +42,12 @@ a {
   padding-top: 35px;
 }
 
+.item-1 a {
+  cursor: default;
+}
+
+
+
 .item-1 .line {
   height: 34px;
   width: 1px;
@@ -535,6 +541,87 @@ a {
     padding-right: 15px;
     cursor: pointer;
   }
+
+
+
+   /* ABOUT PANEL  */
+
+   .about {
+      width: 800px;
+      height: 410px;
+      margin: 30px auto 0 auto;
+      opacity: 1;
+      position: relative;
+      bottom: 2641px;
+   }
+
+   .about .about-panel {
+    width: 790px;
+    height: 410px;
+    margin: 10px auto 0 auto;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+   }
+
+   .about .about-panel .self-portrait {
+     margin: 10px;
+   }
+
+   .about .about-panel .self-portrait .image-wrapper {
+     margin: 15px;
+     height: 356px;
+     border: 3px solid white;
+   }
+
+   .about .about-panel .self-portrait .image-wrapper img {
+     height: 100%;
+     width: 100%;
+   }
+
+
+   .about .about-panel .text-section .bio {
+     height: 150px;
+     margin: 5px;
+   }
+
+   .about .about-panel .text-section .bio p {
+     padding: 8px;
+     color: white;
+     font-family: 'Share Tech Mono', monospace;
+     line-height: 22px;
+   }
+
+   .about .about-panel .text-section .shapes-wrapper {
+     height: 230px;
+     margin: 5px;
+   }
+
+   .about .about-panel .text-section .shapes-wrapper .shape-one {
+     height: 160px;
+     border: 2px solid white;
+   }
+
+   .about .about-panel .text-section .shapes-wrapper .shape-two{
+     height: 170px;
+     width: 430px;
+     border: 2px solid white;
+     position: relative;
+     bottom: 151px;
+     left: 15px;
+   }
+
+   .about .about-panel .text-section .shapes-wrapper .shape-three{
+     height: 180px;
+     width: 400px;
+     border: 2px solid white;
+     position: relative;
+     bottom: 307px;
+     left: 30px;
+   }
+
+
+
 
   .item-6 {
     background: #E84526;
