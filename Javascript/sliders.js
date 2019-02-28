@@ -70,7 +70,7 @@ strartSlide();
 let slidesTwo = document.getElementsByClassName('img-container-2016'); // selects all images 2016
 let leftSideArrowTwo = document.querySelector('.left-arrow-2016'); // Select left side arrow icon
 let rightSideArrowTwo = document.querySelector('.right-arrow-2016'); // Select right side arrow icon
-let imageLegendTwo = document.getElementsByClassName('paragraph-container-2016'); // selects all para 2015
+let imageLegendTwo = document.getElementsByClassName('paragraph-container-2016'); // selects all for 2017
 let currentTwo = 0; // Represents the image we are on, and it's 0 by default
 
 // Clears all images
@@ -135,7 +135,7 @@ strartSlideTwo();
 let slidesThree = document.getElementsByClassName('img-container-2017'); // selects all images 2017
 let leftSideArrowThree = document.querySelector('.left-arrow-2017'); // Select left side arrow icon
 let rightSideArrowThree = document.querySelector('.right-arrow-2017'); // Select right side arrow icon
-let imageLegendThree = document.getElementsByClassName('paragraph-container-2017'); // selects all para 2015
+let imageLegendThree = document.getElementsByClassName('paragraph-container-2017'); // selects all for 2017
 let currentThree = 0; // Represents the image we are on, and it's 0 by default
 
 // Clears all images
@@ -193,3 +193,66 @@ rightSideArrowThree.addEventListener('click', function () {
 });
 
 strartSlideThree();
+
+// Client slider
+let slidesFour = document.getElementsByClassName('img-container-clients'); // selects all images clients
+let leftSideArrowFour = document.querySelector('.left-arrow-clients'); // Select left side arrow icon
+let rightSideArrowFour = document.querySelector('.right-arrow-clients'); // Select right side arrow icon
+let imageLegendFour = document.getElementsByClassName('paragraph-container-clients'); // selects all for clients
+let currentFour = 0; // Represents the image we are on, and it's 0 by default
+
+// Clears all images
+function resetFour() {
+  for (let i = 0; i < slidesFour.length; i++) {
+    slidesFour[i].style.display = 'none';
+  }
+  for (let i = 0; i < imageLegendFour.length; i++) {
+    imageLegendFour[i].style.display = 'none';
+  }
+}
+
+// Initializes the slider, after reseting the images and calls the first one.
+function strartSlideFour() {
+  resetFour();
+  slidesFour[0].style.display = 'block';
+  imageLegendFour[0].style.display = 'block';
+}
+
+// Show previous image
+function slideLeftFour() {
+  resetFour();
+  slidesFour[currentFour - 1].style.display = 'block';
+  imageLegendFour[currentFour - 1].style.display = 'block';
+  currentFour--;
+}
+
+// Show next image
+function slideRightFour() {
+  resetFour();
+  slidesFour[currentFour + 1].style.display = 'block';
+  imageLegendFour[currentFour + 1].style.display = 'block';
+  currentFour++;
+}
+
+// Left arrow click event
+leftSideArrowFour.addEventListener('click', function () {
+  if (currentFour === 0) {
+    currentFour = slidesFour.length;
+    currentFour = imageLegendFour.length;
+  }
+  slideLeftFour();
+});
+
+
+// Right arrow click event
+rightSideArrowFour.addEventListener('click', function () {
+  if (currentFour === slidesFour.length - 1) {
+    currentFour = -1;
+  }
+  if (currentFour === imageLegendFour.length - 1) {
+    currentFour = -1;
+  }
+  slideRightFour();
+});
+
+strartSlideFour();
