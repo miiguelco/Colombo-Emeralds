@@ -1,4 +1,4 @@
-// IMAGE SLIDER
+// IMAGE SLIDERS
 
 //2015
 let slides = document.getElementsByClassName('img-container'); // selects all images 2015
@@ -63,6 +63,8 @@ rightSideArrow.addEventListener('click', function () {
 });
 
 strartSlide();
+
+
 
 
 
@@ -131,6 +133,9 @@ rightSideArrowTwo.addEventListener('click', function () {
 strartSlideTwo();
 
 
+
+
+
 // 2017
 let slidesThree = document.getElementsByClassName('img-container-2017'); // selects all images 2017
 let leftSideArrowThree = document.querySelector('.left-arrow-2017'); // Select left side arrow icon
@@ -194,7 +199,8 @@ rightSideArrowThree.addEventListener('click', function () {
 
 strartSlideThree();
 
-// Client slider
+// CLIENT SLIDER
+
 let slidesFour = document.getElementsByClassName('img-container-clients'); // selects all images clients
 let leftSideArrowFour = document.querySelector('.left-arrow-clients'); // Select left side arrow icon
 let rightSideArrowFour = document.querySelector('.right-arrow-clients'); // Select right side arrow icon
@@ -256,3 +262,70 @@ rightSideArrowFour.addEventListener('click', function () {
 });
 
 strartSlideFour();
+
+
+
+
+// ACID ART SLIDER
+
+let slidesFive = document.getElementsByClassName('img-container-acid'); // selects all images acid
+let leftSideArrowFive = document.querySelector('.left-arrow-acid'); // Select left side arrow icon
+let rightSideArrowFive = document.querySelector('.right-arrow-acid'); // Select right side arrow icon
+let imageLegendFive = document.getElementsByClassName('paragraph-container-acid'); // selects all for acid
+let currentFive = 0; // Represents the image we are on, and it's 0 by default
+
+// Clears all images
+function resetFive() {
+  for (let i = 0; i < slidesFive.length; i++) {
+    slidesFive[i].style.display = 'none';
+  }
+  for (let i = 0; i < imageLegendFive.length; i++) {
+    imageLegendFive[i].style.display = 'none';
+  }
+}
+
+// Initializes the slider, after reseting the images and calls the first one.
+function strartSlideFive() {
+  resetFive();
+  slidesFive[0].style.display = 'block';
+  imageLegendFive[0].style.display = 'block';
+}
+
+// Show previous image
+function slideLeftFive() {
+  resetFive();
+  slidesFive[currentFive - 1].style.display = 'block';
+  imageLegendFive[currentFive - 1].style.display = 'block';
+  currentFive--;
+}
+
+// Show next image
+function slideRightFive() {
+  resetFive();
+  slidesFive[currentFive + 1].style.display = 'block';
+  imageLegendFive[currentFive + 1].style.display = 'block';
+  currentFive++;
+}
+
+// Left arrow click event
+leftSideArrowFive.addEventListener('click', function () {
+  if (currentFive === 0) {
+    currentFive = slidesFive.length;
+    currentFive = imageLegendFive.length;
+  }
+  slideLeftFive();
+});
+
+
+// Right arrow click event
+rightSideArrowFive.addEventListener('click', function () {
+  if (currentFive === slidesFive.length - 1) {
+    currentFive = -1;
+  }
+  if (currentFive === imageLegendFive.length - 1) {
+    currentFive = -1;
+  }
+  slideRightFive();
+});
+
+strartSlideFive();
