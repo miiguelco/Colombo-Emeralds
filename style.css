@@ -20,7 +20,7 @@ a {
   display: grid;
   grid-template-columns: 12% auto 12%;
   grid-template-rows: 15% auto 15%;
-  height: 621px;
+  height: 663px;
   color: rgb(249, 245, 229);
   font-family: 'Roboto Mono', monospace;
   letter-spacing: 2px;
