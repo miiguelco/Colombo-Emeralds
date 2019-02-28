@@ -263,9 +263,6 @@ rightSideArrowFour.addEventListener('click', function () {
 
 strartSlideFour();
 
-
-
-
 // ACID ART SLIDER
 
 let slidesFive = document.getElementsByClassName('img-container-acid'); // selects all images acid
@@ -329,3 +326,68 @@ rightSideArrowFive.addEventListener('click', function () {
 });
 
 strartSlideFive();
+
+
+// PORTRAITS SLIDER
+
+let slidesSix = document.getElementsByClassName('img-container-portraits'); // selects all images portraits
+let leftSideArrowSix = document.querySelector('.left-arrow-portraits'); // Select left side arrow icon
+let rightSideArrowSix = document.querySelector('.right-arrow-portraits'); // Select right side arrow icon
+let imageLegendSix = document.getElementsByClassName('paragraph-container-portraits'); // selects all for portraits
+let currentSix = 0; // Represents the image we are on, and it's 0 by default
+
+// Clears all images
+function resetSix() {
+  for (let i = 0; i < slidesSix.length; i++) {
+    slidesSix[i].style.display = 'none';
+  }
+  for (let i = 0; i < imageLegendSix.length; i++) {
+    imageLegendSix[i].style.display = 'none';
+  }
+}
+
+// Initializes the slider, after reseting the images and calls the first one.
+function strartSlideSix() {
+  resetSix();
+  slidesSix[0].style.display = 'block';
+  imageLegendSix[0].style.display = 'block';
+}
+
+// Show previous image
+function slideLeftSix() {
+  resetSix();
+  slidesSix[currentSix - 1].style.display = 'block';
+  imageLegendSix[currentSix - 1].style.display = 'block';
+  currentSix--;
+}
+
+// Show next image
+function slideRightSix() {
+  resetSix();
+  slidesSix[currentSix + 1].style.display = 'block';
+  imageLegendSix[currentSix + 1].style.display = 'block';
+  currentSix++;
+}
+
+// Left arrow click event
+leftSideArrowSix.addEventListener('click', function () {
+  if (currentSix === 0) {
+    currentSix = slidesSix.length;
+    currentSix = imageLegendSix.length;
+  }
+  slideLeftSix();
+});
+
+
+// Right arrow click event
+rightSideArrowSix.addEventListener('click', function () {
+  if (currentSix === slidesSix.length - 1) {
+    currentSix = -1;
+  }
+  if (currentSix === imageLegendSix.length - 1) {
+    currentSix = -1;
+  }
+  slideRightSix();
+});
+
+strartSlideSix();
