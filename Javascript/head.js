@@ -3,7 +3,7 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(400, 400) // sets the renderer size to window size
 renderer.setPixelRatio(window.devicePixelRatio) // sets the pixel whatever the device is
-renderer.setClearColor(0xE84526) // renderer color
+renderer.setClearColor(0x000000) // renderer color
 
 // ADD RENDERER TO ELEMENT
 const sectionTag = document.querySelector(".head-container")

@@ -64,7 +64,7 @@ function showSlider2015() {
    canvasScene.style.opacity = "0";
    canvasScene.style.visibility = "hidden";
 
-   work2015Selected.style.color = "rgb(250, 145, 145)";
+   work2015Selected.style.color = "rgb(172, 172, 172)";
    work2015Selected.style.transition = "all .6s ease-in .5s";
    work2016Selected.style.color = "rgb(249, 245, 229)";
    work2016Selected.style.transition = "all .6s ease-in .5s";
@@ -79,7 +79,6 @@ function showSlider2015() {
    aboutSelected.style.color = "rgb(249, 245, 229)";
    aboutSelected.style.transition = "all .6s ease-in .5s";
 
-   sliderWork2015.style.transform = "translateY(-540px)";
    sliderWork2015.style.opacity = "1";
 
    sliderWork2015.style.transition = "all .6s ease-in .5s";
@@ -118,7 +117,7 @@ function showSlider2015() {
 
     work2015Selected.style.color = "rgb(249, 245, 229)";
     work2015Selected.style.transition = "all .6s ease-in .5s";
-    work2016Selected.style.color = "rgb(250, 145, 145)";
+    work2016Selected.style.color = "rgb(172, 172, 172)";
     work2016Selected.style.transition = "all .6s ease-in .5s";
     work2017Selected.style.color = "rgb(249, 245, 229)";
     work2017Selected.style.transition = "all .6s ease-in .5s";
@@ -133,7 +132,6 @@ function showSlider2015() {
 
     sliderWork2015.style.opacity = "0";
     sliderWork2015.style.transition = "opacity .4s ease-out .4s";
-    sliderWork2016.style.transform = "translateY(-540px)";
     sliderWork2016.style.opacity = "1";
     sliderWork2016.style.transition = "all .6s ease-in .5s";
     sliderWork2017.style.opacity = "0";
@@ -170,7 +168,7 @@ function showSlider2015() {
      work2015Selected.style.transition = "all .6s ease-in .5s";
      work2016Selected.style.color = "rgb(249, 245, 229)";
      work2016Selected.style.transition = "all .6s ease-in .5s";
-     work2017Selected.style.color = "rgb(250, 145, 145)";
+     work2017Selected.style.color = "rgb(172, 172, 172)";
      work2017Selected.style.transition = "all .6s ease-in .5s";
      workClientsSelected.style.color = "rgb(249, 245, 229)";
      workClientsSelected.style.transition = "all .6s ease-in .5s";
@@ -181,7 +179,6 @@ function showSlider2015() {
      aboutSelected.style.color = "rgb(249, 245, 229)";
      aboutSelected.style.transition = "all .6s ease-in .5s";
 
-     sliderWork2017.style.transform = "translateY(-540px)";
      sliderWork2017.style.opacity = "1";
      sliderWork2017.style.transition = "all .6s ease-in .5s";
 
@@ -225,7 +222,7 @@ function showSlider2015() {
       work2016Selected.style.transition = "all .6s ease-in .5s";
       work2017Selected.style.color = "rgb(249, 245, 229)";
       work2017Selected.style.transition = "all .6s ease-in .5s";
-      workClientsSelected.style.color = "rgb(250, 145, 145)";
+      workClientsSelected.style.color = "rgb(172, 172, 172)";
       workClientsSelected.style.transition = "all .6s ease-in .5s";
       workAcidSelected.style.color = "rgb(249, 245, 229)";
       workAcidSelected.style.transition = "all .6s ease-in .5s";
@@ -234,7 +231,6 @@ function showSlider2015() {
       aboutSelected.style.color = "rgb(249, 245, 229)";
       aboutSelected.style.transition = "all .6s ease-in .5s";
 
-      sliderWorkClients.style.transform = "translateY(-540px)";
       sliderWorkClients.style.opacity = "1";
       sliderWorkClients.style.transition = "all .6s ease-in .5s";
 
@@ -279,14 +275,13 @@ function showSlider2015() {
       work2017Selected.style.transition = "all .6s ease-in .5s";
       workClientsSelected.style.color = "rgb(249, 245, 229)";
       workClientsSelected.style.transition = "all .6s ease-in .5s";
-      workAcidSelected.style.color = "rgb(250, 145, 145)";
+      workAcidSelected.style.color = "rgb(172, 172, 172)";
       workAcidSelected.style.transition = "all .6s ease-in .5s";
       workPortraitsSelected.style.color = "rgb(249, 245, 229)";
       workPortraitsSelected.style.transition = "all .6s ease-in .5s";
       aboutSelected.style.color = "rgb(249, 245, 229)";
       aboutSelected.style.transition = "all .6s ease-in .5s";
 
-      sliderAcidWork.style.transform = "translateY(-540px)";
       sliderAcidWork.style.opacity = "1";
       sliderAcidWork.style.transition = "all .6s ease-in .5s";
 
@@ -334,12 +329,11 @@ function showSlider2015() {
        workClientsSelected.style.transition = "all .6s ease-in .5s";
        workAcidSelected.style.color = "rgb(249, 245, 229)";
        workAcidSelected.style.transition = "all .6s ease-in .5s";
-       workPortraitsSelected.style.color = "rgb(250, 145, 145)";
+       workPortraitsSelected.style.color = "rgb(172, 172, 172)";
        workPortraitsSelected.style.transition = "all .6s ease-in .5s";
        aboutSelected.style.color = "rgb(249, 245, 229)";
        aboutSelected.style.transition = "all .6s ease-in .5s";
 
-       sliderPortraitsWork.style.transform = "translateY(-540px)";
        sliderPortraitsWork.style.opacity = "1";
        sliderPortraitsWork.style.transition = "all .6s ease-in .5s";
 
@@ -387,10 +381,9 @@ function showSlider2015() {
         workAcidSelected.style.transition = "all .6s ease-in .5s";
         workPortraitsSelected.style.color = "rgb(249, 245, 229)";
         workPortraitsSelected.style.transition = "all .6s ease-in .5s";
-        aboutSelected.style.color = "rgb(250, 145, 145)";
+        aboutSelected.style.color = "rgb(172, 172, 172)";
         aboutSelected.style.transition = "all .6s ease-in .5s";
 
-        sliderAbout.style.transform = "translateY(-540px)";
         sliderAbout.style.opacity = "1";
         sliderAbout.style.transition = "all .6s ease-in .5s";
 
