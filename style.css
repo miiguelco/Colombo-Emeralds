@@ -1,814 +1,560 @@
-
-*{
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
 
-
 html {
-  font-size: 62.5%; /* 16/10= 0.62 */
-}
+  font-size: 62.5%;
+  /* 16/10= 0.62 */ }
 
-
- body {
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: hidden;
   background: black;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
- canvas {
-   opacity: 1;
-   display: block;
- }
+canvas {
+  opacity: 1;
+  display: block; }
 
 .container {
   display: grid;
   grid-template-columns: 12% auto 12%;
   grid-template-rows: 15% auto 15%;
   height: 95vh;
-  color: rgb(249, 245, 229);
+  color: #f9f5e5;
   font-family: 'Roboto Mono', monospace;
   letter-spacing: .2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+  /* The animation code */
+  /* The animation code */ }
+  .container .item {
+    background: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3.5rem;
+    animation: opa 2s ease-in; }
+    .container .item :hover {
+      cursor: pointer; }
+  .container .item-1 {
+    background: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3.5rem;
+    animation: opa 2s ease-in; }
+  .container a {
+    cursor: default; }
+  .container .line {
+    height: 3.4rem;
+    width: .1rem;
+    background-color: white;
+    margin: .5rem auto;
+    animation: height 3s ease-in 2s infinite normal; }
 
-
-}
-
-.item {
-  background: black;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 3.5rem;
-  animation: opa 2s ease-in;
-}
-
-.item-1 {
-  background: black;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 3.5rem;
-  animation: opa 2s ease-in;
-}
-
-.item-1 a {
-  cursor: default;
-}
-
-
-.item-1 .line {
-  height: 3.4rem;
-  width: .1rem;
-  background-color: white;
-  margin: .5rem auto;
-  animation: height 3s ease-in 2s infinite normal;
-}
-
-/* The animation code */
 @keyframes height {
-  from {height: 0;}
-  to {height: 3.4rem;}
-}
+  from {
+    height: 0; }
+  to {
+    height: 3.4rem; } }
+  .container .item-2 {
+    text-align: center;
+    background: black;
+    letter-spacing: .2rem;
+    font-family: 'Felipa', cursive; }
+  .container h1 {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    animation: opa 2s ease-in; }
+    .container h1 :hover {
+      cursor: pointer; }
 
-
-.item-2 {
-  text-align: center;
-  background: black;
-  letter-spacing: .2rem;
-  font-family: 'Felipa', cursive;
-  /* font-family: 'Share Tech Mono', monospace;
-  font-family: 'Orbitron', sans-serif; */
-}
-
-.item-2 h1 {
-  font-size: 2.3rem;
-  margin-top: 3.5rem;
-  animation: opa 2s ease-in;
-}
-
-/* The animation code */
 @keyframes opa {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .container .item-4 {
+    background: black;
+    animation: opa 2s ease-in; }
+    .container .item-4 .links-wrapper {
+      margin: 0 auto;
+      width: 13rem;
+      height: 13rem; }
+      .container .item-4 .links-wrapper:after {
+        content: "";
+        display: block;
+        height: 0rem;
+        width: .3rem;
+        background-color: white;
+        margin: 2rem auto;
+        animation: height4 5s ease-in 4s infinite alternate;
+        /* The animation code */ }
 
-
-.item-4 {
-  background: black;
-  animation: opa 2s ease-in;
-}
-
-.item-4 .links-wrapper {
-  margin: 0 auto;
-  width: 13rem;
-  height: 13rem;
-}
-
-.item-4 .links-wrapper:after {
-  content: "";
-  display: block;
-  height: 0rem;
-  width: .3rem;
-  background-color: rgb(255, 255, 255);
-  margin: 2rem auto;
-  animation: height4 5s ease-in 4s infinite alternate;
-}
-
-/* The animation code */
 @keyframes height4 {
-  from {height:.1rem;}
-  to {height: 25rem;}
-}
-
-
-
-.item-4 .a {
-  margin-top: 1.2rem;
-  font-size: 1.3rem;
-  padding-left: 4.2rem;
-  cursor: pointer;
-}
-
-.item-4 .a:after {
-  content: "";
-  display: block;
-  bottom: 0;
-  right: 0;
-  width: 0%;
-  transition: 0.5s ease;
-  border-bottom: .2rem solid rgb(236, 248, 251);
-  border-radius: 20%;
-}
-
-.item-4 .a:hover:after {
-   width: 100%;
-}
-
-
-.item-5 {
-  background: black;
-}
-
-
-.head-container {
-  width: 40rem;
-  height: 40rem;
-  background: black;
-  margin: 2rem auto 0 auto;
-  animation: opa 2s ease-in;
-}
-
- .work-slider-2015 {
-    width: 80rem;
-    height: 40rem;
-    margin: 1.5rem auto 0 auto;
-    opacity: 0;
-    transform: translateY(-51.5rem);
-}
-
-.work-slider-2015 .slide {
-  width: 79rem;
-  height: 41rem;
-  margin: 1rem auto 0 auto;
-  opacity: 1;
-}
-
-.work-slider-2015 .slide .img-container {
-  width: 40rem;
-  height: 40rem;
-  margin: 0 auto;
-  border: .3rem solid white;
-  -webkit-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-  -moz-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-  box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-  }
-
-  .work-slider-2015 .slide  img {
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .work-slider-2015 .slide .legend-arrows-wrapper {
-    width: 40rem;
-    height: 25rem;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .work-slider-2015 .slide .left-arrow {
-    display: inline;
-    margin-top: .7rem;
-    margin-right: 1.5rem;
-    float: left;
-    padding-left: 1.5rem;
-    cursor: pointer;
-  }
-
-  .left-arrow:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-  }
-
-  .right-arrow:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-  }
-
-
-
-.work-slider-2015 .slide  .legend-arrows-wrapper .paragraph-wrapper {
-  height: 3rem;
-  display: inline-block;
-  margin-top: .7rem;
-  padding: 1rem;
-  font-size: 1.3rem;
-}
-
-
-  .work-slider-2015 .slide p {
-    display: inline;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 100;
-    margin-right: 1.5rem;
-
-  }
-
-  .work-slider-2015 .slide .right-arrow {
-    display: inline;
-    float: right;
-    margin-top: .7rem;
-    padding-right: 1.5rem;
-    cursor: pointer;
-  }
-
-  /* SLIDER 2016 */
-
-  .work-slider-2016 {
-     width: 80rem;
-     height: 40rem;
-     margin: 4rem auto 0 auto;
-     opacity: 0;
-     position: relative;
-     bottom: 44rem;
-     transform: translateY(-51.5rem);
-  }
-
-  .work-slider-2016 .slide-2016 {
-   width: 79rem;
-   height: 41rem;
-   margin: 1rem auto 0 auto;
-   opacity: 1;
-  }
-
-  .work-slider-2016 .slide-2016 .img-container-2016 {
-   width: 40rem;
-   height: 40rem;
-   margin: auto;
-   border: .3rem solid white;
-   -webkit-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-   -moz-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-   box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-   }
-
-   .work-slider-2016 .slide-2016  img {
-     width: 100%;
-     height: 100%;
-   }
-
-
-   .work-slider-2016 .slide-2016 .legend-arrows-wrapper-2016 {
-     width: 40rem;
-     height: 5rem;
-     margin: 0 auto;
-     text-align: center;
-   }
-
-   .work-slider-2016 .slide-2016 .left-arrow-2016 {
-     display: inline;
-     margin-top: .7rem;
-     margin-right: 1.5rem;
-     float: left;
-     padding-left: 1.5rem;
-     cursor: pointer;
-   }
-
-   .left-arrow-2016:hover {
-     transform: scaleX(1.1) scaleY(1.1);
-   }
-
-   .right-arrow-2016:hover {
-     transform: scaleX(1.1) scaleY(1.1);
-   }
-
-  .work-slider-2016 .slide-2016  .legend-arrows-wrapper-2016 .paragraph-wrapper-2016 {
-   height: 3rem;
-   display: inline-block;
-   margin-top: .7rem;
-   padding: 1rem;
-  }
-
-
-   .work-slider-2016 .slide-2016 p {
-     display: inline;
-     text-align: center;
-     color: white;
-     font-size: 1.5rem;
-     font-family: 'Share Tech Mono', monospace;
-     font-weight: 100;
-     margin-right: 1.5rem;
-
-   }
-
-   .work-slider-2016 .slide-2016 .right-arrow-2016 {
-     display: inline;
-     float: right;
-     margin-top: .7rem;
-     padding-right: 1.5rem;
-     cursor: pointer;
-   }
-
-   /* SLIDER 2017 */
-
-   .work-slider-2017 {
-      width: 80rem;
+  from {
+    height: .1rem; }
+  to {
+    height: 25rem; } }
+      .container .item-4 .links-wrapper .a {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        padding-left: 4.2rem;
+        cursor: pointer; }
+        .container .item-4 .links-wrapper .a:after {
+          content: "";
+          display: block;
+          bottom: 0;
+          right: 0;
+          width: 0%;
+          transition: 0.5s ease;
+          border-bottom: 0.2rem solid #ecf8fb;
+          border-radius: 20%; }
+        .container .item-4 .links-wrapper .a:hover:after {
+          width: 100%; }
+  .container .item-5 {
+    background: black; }
+    .container .item-5 .head-container {
+      width: 40rem;
       height: 40rem;
-      margin: 4.1rem auto 0 auto;
-      opacity: 0;
-      position: relative;
-      bottom: 88rem;
-      transform: translateY(-51.5rem);
-   }
+      background: black;
+      margin: 2rem auto 0 auto;
+      animation: opa 2s ease-in; }
+  .container .item-6 {
+    background: black;
+    animation: opa 2s ease-in; }
+    .container .item-6 .line {
+      height: 0px;
+      width: .4rem;
+      background-color: white;
+      margin: auto;
+      animation: height 5s ease-in-out 2s infinite alternate;
+      /* The animation code */ }
 
-   .work-slider-2017 .slide-2017 {
+@keyframes height {
+  from {
+    height: 0; }
+  to {
+    height: 40rem; } }
+
+.work-slider-2015 {
+  width: 80rem;
+  height: 40rem;
+  margin: 1.5rem auto 0 auto;
+  opacity: 0;
+  transform: translateY(-50rem); }
+  .work-slider-2015 .slide {
     width: 79rem;
     height: 41rem;
     margin: 1rem auto 0 auto;
-    opacity: 1;
-   }
-
-   .work-slider-2017 .slide-2017 .img-container-2017 {
+    opacity: 1; }
+  .work-slider-2015 .img-container {
     width: 40rem;
     height: 40rem;
     margin: auto;
     border: .3rem solid white;
-    -webkit-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-    -moz-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-    box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-    }
-
-    .work-slider-2017 .slide-2017  img {
-      width: 100%;
-      height: 100%;
-    }
-
-
-    .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 {
-      width: 40rem;
-      height: 5rem;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .work-slider-2017 .slide-2017 .left-arrow-2017 {
-      display: inline;
-      margin-right: 1.5rem;
-      margin-top: .7rem;
-      float: left;
-      padding-left: 1.5rem;
-      cursor: pointer;
-    }
-
-    .left-arrow-2017:hover {
-      transform: scaleX(1.1) scaleY(1.1);
-    }
-
-    .right-arrow-2017:hover {
-      transform: scaleX(1.1) scaleY(1.1);
-    }
-
-   .work-slider-2017 .slide-2017  .legend-arrows-wrapper-2017 .paragraph-wrapper-2017 {
-    height: 3rem;
-    display: inline-block;
-    margin-top: .7rem;
-    padding: 1rem;
-   }
-
-
-    .work-slider-2017 .slide-2017 p {
-      display: inline;
-      text-align: center;
-      color: white;
-      font-size: 1.5rem;
-      font-family: 'Share Tech Mono', monospace;
-      font-weight: 100;
-      margin-right: 1.5rem;
-
-    }
-
-    .work-slider-2017 .slide-2017 .right-arrow-2017 {
-      display: inline;
-      float: right;
-      margin-top: .7rem;
-      padding-right: 1.5rem;
-      cursor: pointer;
-    }
-
-
-    /* Slider Clients */
-
-    .work-slider-clients {
-       width: 80rem;
-       height: 40rem;
-       margin: 4.1rem auto 0 auto;
-       opacity: 0;
-       position: relative;
-       bottom: 132rem;
-       transform: translateY(-51.5rem);
-    }
-
-    .work-slider-clients .slide-clients {
-     width: 79rem;
-     height: 41rem;
-     margin: 1rem auto 0 auto;
-     opacity: 1;
-    }
-
-    .work-slider-clients .slide-clients .img-container-clients {
-     width: 40rem;
-     height: 40rem;
-     margin: auto;
-     border: .3rem solid white;
-     -webkit-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-     -moz-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-     box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-     }
-
-     .work-slider-clients .slide-clients  img {
-       width: 100%;
-       height: 100%;
-     }
-
-
-     .work-slider-clients .slide-clients .legend-arrows-wrapper-clients {
-       width: 40rem;
-       height: 5rem;
-       margin: 0 auto;
-       text-align: center;
-     }
-
-     .work-slider-clients .slide-clients .left-arrow-clients {
-       display: inline;
-       margin-right: 1.5rem;
-       margin-top: .7rem;
-       float: left;
-       padding-left: 1.5rem;
-       cursor: pointer;
-     }
-
-     .left-arrow-clients :hover {
-       transform: scaleX(1.1) scaleY(1.1);
-     }
-
-     .right-arrow-clients:hover {
-       transform: scaleX(1.1) scaleY(1.1);
-     }
-
-    .work-slider-clients .slide-clients  .legend-arrows-wrapper-clients .paragraph-wrapper-clients {
-     height: 3rem;
-     display: inline-block;
-     padding: 1rem;
-     margin-top: .7rem;
-    }
-
-
-     .work-slider-clients .slide-clients p {
-       display: inline;
-       text-align: center;
-       color: white;
-       font-size: 1.5rem;
-       font-family: 'Share Tech Mono', monospace;
-       font-weight: 100;
-       margin-right: 1.5rem;
-
-     }
-
-     .work-slider-clients .slide-clients .right-arrow-clients {
-       display: inline;
-       float: right;
-       margin-top: .7rem;
-       padding-right: 1.5rem;
-       cursor: pointer;
-     }
-
-
-     /* Slider Acid  */
-
-     .work-slider-acid {
-        width: 80rem;
-        height: 40rem;
-        margin: 4rem auto 0 auto;
-        opacity: 0;
-        position: relative;
-        bottom: 175.9rem;
-        transform: translateY(-51.5rem);
-     }
-
-     .work-slider-acid .slide-acid {
-      width: 79rem;
-      height: 41rem;
-      margin: 1rem auto 0 auto;
-      opacity: 1;
-     }
-
-     .work-slider-acid .slide-acid .img-container-acid {
-      width: 40rem;
-      height: 40rem;
-      margin: auto;
-      border: .3rem solid white;
-      -webkit-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-      -moz-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-      box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-      }
-
-      .work-slider-acid .slide-acid  img {
-        width: 100%;
-        height: 100%;
-      }
-
-
-      .work-slider-acid .slide-acid .legend-arrows-wrapper-acid {
-        width: 40rem;
-        height: 5rem;
-        margin: 0 auto;
-        text-align: center;
-      }
-
-      .work-slider-acid .slide-acid .left-arrow-acid {
-        display: inline;
-        margin-right: 1.5rem;
-        margin-top: .7rem;
-        float: left;
-        padding-left: 1.5rem;
-        cursor: pointer;
-      }
-
-      .left-arrow-acid:hover {
-        transform: scaleX(1.1) scaleY(1.1);
-      }
-
-      .right-arrow-acid:hover {
-        transform: scaleX(1.1) scaleY(1.1);
-      }
-
-     .work-slider-acid .slide-acid  .legend-arrows-wrapper-acid .paragraph-wrapper-acid {
+    -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+    -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+    box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+  .work-slider-2015 img {
+    width: 100%;
+    height: 100%; }
+  .work-slider-2015 .legend-arrows-wrapper {
+    width: 40rem;
+    height: 5rem;
+    margin: 0 auto;
+    text-align: center; }
+    .work-slider-2015 .legend-arrows-wrapper .paragraph-wrapper {
       height: 3rem;
       display: inline-block;
-      padding: 1rem;
       margin-top: .7rem;
-     }
-
-
-      .work-slider-acid .slide-acid p {
+      padding: 1rem;
+      font-size: 1.3rem; }
+      .work-slider-2015 .legend-arrows-wrapper .paragraph-wrapper p {
         display: inline;
         text-align: center;
         color: white;
         font-size: 1.5rem;
         font-family: 'Share Tech Mono', monospace;
         font-weight: 100;
-        margin-right: 1.5rem;
-
-      }
-
-      .work-slider-acid .slide-acid .right-arrow-acid {
-        display: inline;
-        float: right;
-        margin-top: .7rem;
-        padding-right: 1.5rem;
-        cursor: pointer;
-      }
-
-
- /* Slider Portraits  */
-
- .work-slider-portraits {
-    width: 80rem;
-    height: 40rem;
-    margin: 4rem auto 0 auto;
-    opacity: 0;
-    position: relative;
-    bottom: 219.8rem;
-    transform: translateY(-51.5rem);
- }
-
- .work-slider-portraits .slide-portraits {
-  width: 79rem;
-  height: 41rem;
-  margin: 1rem auto 0 auto;
-  opacity: 1;
- }
-
- .work-slider-portraits .slide-portraits .img-container-portraits {
-  width: 40rem;
-  height: 40rem;
-  margin: auto;
-  border: .3rem solid white;
-  -webkit-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-  -moz-box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-  box-shadow: 0px .2rem 2.7rem -0.5rem rgba(0,0,0,1);
-  }
-
-  .work-slider-portraits .slide-portraits  img {
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits {
-    width: 40rem;
-    height: 5rem;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .work-slider-portraits .slide-portraits .left-arrow-portraits {
+        margin-right: 1.5rem; }
+  .work-slider-2015 .left-arrow {
     display: inline;
     margin-top: .7rem;
     margin-right: 1.5rem;
     float: left;
     padding-left: 1.5rem;
-    cursor: pointer;
-  }
-
-  .left-arrow-portraits:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-  }
-
-  .right-arrow-portraits:hover {
-    transform: scaleX(1.1) scaleY(1.1);
-  }
-
- .work-slider-portraits .slide-portraits  .legend-arrows-wrapper-portraits .paragraph-wrapper-portraits {
-  height: 3rem;
-  display: inline-block;
-  padding: 1rem;
-  margin-top: .7rem;
- }
-
-
-  .work-slider-portraits .slide-portraits p {
-    display: inline;
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    font-family: 'Share Tech Mono', monospace;
-    font-weight: 100;
-    margin-right: 1.5rem;
-
-  }
-
-  .work-slider-portraits .slide-portraits .right-arrow-portraits {
+    cursor: pointer; }
+    .work-slider-2015 .left-arrow:hover {
+      transform: scaleX(1.1) scaleY(1.1); }
+  .work-slider-2015 .right-arrow {
     display: inline;
     float: right;
     margin-top: .7rem;
     padding-right: 1.5rem;
-    cursor: pointer;
-  }
+    cursor: pointer; }
+    .work-slider-2015 .right-arrow:hover {
+      transform: scaleX(1.1) scaleY(1.1); }
 
+.work-slider-2016 {
+  width: 80rem;
+  height: 40rem;
+  margin: 4rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 44rem;
+  transform: translateY(-50rem); }
+  .work-slider-2016 .slide-2016 {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1; }
+    .work-slider-2016 .slide-2016 .img-container-2016 {
+      width: 40rem;
+      height: 40rem;
+      margin: auto;
+      border: .3rem solid white;
+      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+    .work-slider-2016 .slide-2016 img {
+      width: 100%;
+      height: 100%; }
+    .work-slider-2016 .slide-2016 .legend-arrows-wrapper-2016 {
+      width: 40rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center; }
+      .work-slider-2016 .slide-2016 .legend-arrows-wrapper-2016 .paragraph-wrapper-2016 {
+        height: 3rem;
+        display: inline-block;
+        margin-top: .7rem;
+        padding: 1rem; }
+      .work-slider-2016 .slide-2016 .legend-arrows-wrapper-2016 p {
+        display: inline;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+        font-family: 'Share Tech Mono', monospace;
+        font-weight: 100;
+        margin-right: 1.5rem; }
+    .work-slider-2016 .slide-2016 .left-arrow-2016 {
+      display: inline;
+      margin-top: .7rem;
+      margin-right: 1.5rem;
+      float: left;
+      padding-left: 1.5rem;
+      cursor: pointer; }
+      .work-slider-2016 .slide-2016 .left-arrow-2016:hover {
+        transform: scaleX(1.1) scaleY(1.1); }
+    .work-slider-2016 .slide-2016 .right-arrow-2016 {
+      display: inline;
+      float: right;
+      margin-top: .7rem;
+      padding-right: 1.5rem;
+      cursor: pointer; }
+      .work-slider-2016 .slide-2016 .right-arrow-2016:hover {
+        transform: scaleX(1.1) scaleY(1.1); }
 
+/* SLIDER 2017 */
+.work-slider-2017 {
+  width: 80rem;
+  height: 40rem;
+  margin: 4.1rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 88rem;
+  transform: translateY(-50rem); }
+  .work-slider-2017 .slide-2017 {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1; }
+    .work-slider-2017 .slide-2017 .img-container-2017 {
+      width: 40rem;
+      height: 40rem;
+      margin: auto;
+      border: .3rem solid white;
+      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+      .work-slider-2017 .slide-2017 .img-container-2017 img {
+        width: 100%;
+        height: 100%; }
+    .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 {
+      width: 40rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center; }
+      .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .left-arrow-2017 {
+        display: inline;
+        margin-top: .7rem;
+        margin-right: 1.5rem;
+        float: left;
+        padding-left: 1.5rem;
+        cursor: pointer; }
+        .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .left-arrow-2017:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+      .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .paragraph-wrapper-2017 {
+        height: 3rem;
+        display: inline-block;
+        margin-top: .7rem;
+        padding: 1rem; }
+        .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .paragraph-wrapper-2017 p {
+          display: inline;
+          text-align: center;
+          color: white;
+          font-size: 1.5rem;
+          font-family: 'Share Tech Mono', monospace;
+          font-weight: 100;
+          margin-right: 1.5rem; }
+      .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .right-arrow-2017 {
+        display: inline;
+        float: right;
+        margin-top: .7rem;
+        padding-right: 1.5rem;
+        cursor: pointer; }
+        .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .right-arrow-2017:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
 
-   /* ABOUT PANEL  */
+.work-slider-clients {
+  width: 80rem;
+  height: 40rem;
+  margin: 4.1rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 132rem;
+  transform: translateY(-50rem); }
+  .work-slider-clients .slide-clients {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1; }
+    .work-slider-clients .slide-clients .img-container-clients {
+      width: 40rem;
+      height: 40rem;
+      margin: auto;
+      border: .3rem solid white;
+      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+      .work-slider-clients .slide-clients .img-container-clients img {
+        width: 100%;
+        height: 100%; }
+    .work-slider-clients .slide-clients .legend-arrows-wrapper-clients {
+      width: 40rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center; }
+      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .left-arrow-clients {
+        display: inline;
+        margin-top: .7rem;
+        margin-right: 1.5rem;
+        float: left;
+        padding-left: 1.5rem;
+        cursor: pointer; }
+        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .left-arrow-clients :hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .paragraph-wrapper-clients {
+        height: 3rem;
+        display: inline-block;
+        padding: 1rem;
+        margin-top: .7rem; }
+        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .paragraph-wrapper-clients p {
+          display: inline;
+          text-align: center;
+          color: white;
+          font-size: 1.5rem;
+          font-family: 'Share Tech Mono', monospace;
+          font-weight: 100;
+          margin-right: 1.5rem; }
+      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .right-arrow-clients {
+        display: inline;
+        float: right;
+        margin-top: .7rem;
+        padding-right: 1.5rem;
+        cursor: pointer; }
+        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .right-arrow-clients:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
 
-   .about {
-      width: 80rem;
-      height: 41rem;
-      margin: 4rem auto 0 auto;
-      opacity: 0;
-      position: relative;
-      bottom: 264.1rem;
-      transform: translateY(-51rem);
-   }
+.work-slider-acid {
+  width: 80rem;
+  height: 40rem;
+  margin: 4rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 175.9rem;
+  transform: translateY(-50rem); }
+  .work-slider-acid .slide-acid {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1; }
+    .work-slider-acid .slide-acid .img-container-acid {
+      width: 40rem;
+      height: 40rem;
+      margin: auto;
+      border: .3rem solid white;
+      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+      .work-slider-acid .slide-acid .img-container-acid img {
+        width: 100%;
+        height: 100%; }
+    .work-slider-acid .slide-acid .legend-arrows-wrapper-acid {
+      width: 40rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center; }
+      .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .left-arrow-acid {
+        display: inline;
+        margin-top: .7rem;
+        margin-right: 1.5rem;
+        float: left;
+        padding-left: 1.5rem;
+        cursor: pointer;
+        cursor: pointer; }
+        .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .left-arrow-acid:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+      .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .paragraph-wrapper-acid {
+        height: 3rem;
+        display: inline-block;
+        padding: 1rem;
+        margin-top: .7rem; }
+        .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .paragraph-wrapper-acid p {
+          display: inline;
+          text-align: center;
+          color: white;
+          font-size: 1.5rem;
+          font-family: 'Share Tech Mono', monospace;
+          font-weight: 100;
+          margin-right: 1.5rem; }
+      .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .right-arrow-acid {
+        display: inline;
+        float: right;
+        margin-top: .7rem;
+        padding-right: 1.5rem;
+        cursor: pointer; }
+        .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .right-arrow-acid:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
 
-   .about .about-panel {
+.work-slider-portraits {
+  width: 80rem;
+  height: 40rem;
+  margin: 4rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 219.8rem;
+  transform: translateY(-50rem); }
+  .work-slider-portraits .slide-portraits {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1; }
+    .work-slider-portraits .slide-portraits .img-container-portraits {
+      width: 40rem;
+      height: 40rem;
+      margin: auto;
+      border: .3rem solid white;
+      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+      .work-slider-portraits .slide-portraits .img-container-portraits img {
+        width: 100%;
+        height: 100%; }
+    .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits {
+      width: 40rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center; }
+      .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .left-arrow-portraits {
+        display: inline;
+        margin-top: .7rem;
+        margin-right: 1.5rem;
+        float: left;
+        padding-left: 1.5rem;
+        cursor: pointer; }
+        .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .left-arrow-portraits:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+      .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .paragraph-wrapper-portraits {
+        height: 3rem;
+        display: inline-block;
+        padding: 1rem;
+        margin-top: .7rem; }
+        .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .paragraph-wrapper-portraits p {
+          display: inline;
+          text-align: center;
+          color: white;
+          font-size: 1.5rem;
+          font-family: 'Share Tech Mono', monospace;
+          font-weight: 100;
+          margin-right: 1.5rem; }
+      .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .right-arrow-portraits {
+        display: inline;
+        float: right;
+        margin-top: .7rem;
+        padding-right: 1.5rem;
+        cursor: pointer; }
+        .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .right-arrow-portraits:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+
+/* ABOUT PANEL  */
+.about {
+  width: 80rem;
+  height: 41rem;
+  margin: 4rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 264.1rem;
+  transform: translateY(-51rem); }
+  .about .about-panel {
     width: 79rem;
     height: 41rem;
     margin: 1rem auto 0 auto;
     opacity: 1;
     display: grid;
-    grid-template-columns: 40% 60%;
-   }
-
-   .about .about-panel .self-portrait {
-     margin: 1rem;
-   }
-
-   .about .about-panel .self-portrait .image-wrapper {
-     margin: 1.5rem;
-     height: 35.6rem;
-     border: .3rem solid white;
-   }
-
-   .about .about-panel .self-portrait .image-wrapper img {
-     height: 100%;
-     width: 100%;
-   }
-
-
-   .about .about-panel .text-section .bio {
-     height: 15rem;
-     margin: .5rem;
-   }
-
-   .about .about-panel .text-section .bio p {
-     padding: .8rem;
-     color: white;
-     font-size: 1.5rem;
-     font-family: 'Share Tech Mono', monospace;
-     line-height: 2.2rem;
-
-   }
-
-   .about .about-panel .text-section .shapes-wrapper {
-     height: 23rem;
-     margin: .5rem;
-   }
-
-   .about .about-panel .text-section .shapes-wrapper .shape-one {
-     height: 16rem;
-     border: .2rem solid white;
-   }
-
-   .about .about-panel .text-section .shapes-wrapper .shape-two{
-     height: 17rem;
-     width: 43rem;
-     border: .2rem solid white;
-     position: relative;
-     bottom: 15.1rem;
-     left: 1.5rem;
-   }
-
-   .about .about-panel .text-section .shapes-wrapper .shape-three{
-     height: 18rem;
-     width: 40rem;
-     border: .2rem solid white;
-     position: relative;
-     bottom: 30.7rem;
-     left: 3rem;
-   }
-
-
-  .item-6 {
-    background: black;
-    animation: opa 2s ease-in;
-  }
-
-
-  .item-6 .line {
-    height: 0px;
-    width: .5rem;
-    background-color: white;
-    margin: auto;
-    animation: height 5s ease-in-out 2s infinite alternate;
-  }
-
-  /* The animation code */
-  @keyframes height {
-    from {height: 0;}
-      to {height: 40rem;}
-    }
-
-    .item-8 {
-      background: black;
-      text-align: center;
-      padding-top: 3.5rem;
-      animation: opa 2s ease-in;
-    }
-
-
-    .item-8 .song-playing {
-      display: inline;
-      position: absolute;
-      visibility: hidden;
-      animation: pulse 3s ease-in-out 2s infinite alternate;
-  }
-  @keyframes pulse {
-    0% {
-      color: #ffffff;
-    }
-    100% {
-      color: black;
-    }
-  }
-
-    .item-8 a {
-      font-size: 1rem;
-    }
+    grid-template-columns: 40% 60%; }
+  .about .self-portrait {
+    margin: 1rem; }
+    .about .self-portrait .image-wrapper {
+      margin: 1.5rem;
+      height: 35.6rem;
+      border: .3rem solid white; }
+      .about .self-portrait .image-wrapper img {
+        height: 100%;
+        width: 100%; }
+  .about .text-section .bio {
+    height: 15rem;
+    margin: .5rem; }
+    .about .text-section .bio p {
+      padding: .8rem;
+      color: white;
+      font-size: 1.5rem;
+      font-family: 'Share Tech Mono', monospace;
+      line-height: 2.2rem; }
+  .about .shapes-wrapper {
+    height: 23rem;
+    margin: .5rem; }
+    .about .shapes-wrapper .shape-one {
+      height: 16rem;
+      border: .2rem solid white; }
+    .about .shapes-wrapper .shape-two {
+      height: 17rem;
+      width: 43rem;
+      border: .2rem solid white;
+      position: relative;
+      bottom: 15.1rem;
+      left: 1.5rem; }
+    .about .shapes-wrapper .shape-three {
+      height: 18rem;
+      width: 40rem;
+      border: .2rem solid white;
+      position: relative;
+      bottom: 30.7rem;
+      left: 3rem; }

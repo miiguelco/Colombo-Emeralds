@@ -1,0 +1,22 @@
+{
+  "name": "colombo",
+  "version": "1.0.0",
+  "description": "artsite",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miiguelco/Colombo-Emeralds.git"
+  },
+  "author": "miguel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miiguelco/Colombo-Emeralds/issues"
+  },
+  "homepage": "https://github.com/miiguelco/Colombo-Emeralds#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
