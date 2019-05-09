@@ -1,0 +1,30 @@
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+
+html {
+  font-size: 62.5%; /* 16/10= 0.62 */
+}
+
+
+ body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: $background-color;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ canvas {
+   opacity: 1;
+   display: block;
+ }

@@ -1,3 +1,27 @@
+@keyframes height {
+  from {
+    height: 0; }
+  to {
+    height: 3.4rem; } }
+
+@keyframes opa {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes height4 {
+  from {
+    height: .1rem; }
+  to {
+    height: 25rem; } }
+
+@keyframes height6 {
+  from {
+    height: 0; }
+  to {
+    height: 40rem; } }
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -23,125 +47,60 @@ canvas {
   opacity: 1;
   display: block; }
 
-.container {
-  display: grid;
-  grid-template-columns: 12% auto 12%;
-  grid-template-rows: 15% auto 15%;
-  height: 95vh;
-  color: #f9f5e5;
-  font-family: 'Roboto Mono', monospace;
-  letter-spacing: .2rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  /* The animation code */
-  /* The animation code */ }
-  .container .item {
-    background: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 3.5rem;
-    animation: opa 2s ease-in; }
-    .container .item :hover {
-      cursor: pointer; }
-  .container .item-1 {
-    background: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 3.5rem;
-    animation: opa 2s ease-in; }
-  .container a {
-    cursor: default; }
-  .container .line {
-    height: 3.4rem;
-    width: .1rem;
-    background-color: white;
-    margin: .5rem auto;
-    animation: height 3s ease-in 2s infinite normal; }
-
-@keyframes height {
-  from {
-    height: 0; }
-  to {
-    height: 3.4rem; } }
-  .container .item-2 {
-    text-align: center;
-    background: black;
-    letter-spacing: .2rem;
-    font-family: 'Felipa', cursive; }
-  .container h1 {
-    font-size: 2.5rem;
-    margin-top: 3.5rem;
-    animation: opa 2s ease-in; }
-    .container h1 :hover {
-      cursor: pointer; }
-
-@keyframes opa {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  .container .item-4 {
-    background: black;
-    animation: opa 2s ease-in; }
-    .container .item-4 .links-wrapper {
-      margin: 0 auto;
-      width: 13rem;
-      height: 13rem; }
-      .container .item-4 .links-wrapper:after {
-        content: "";
-        display: block;
-        height: 0rem;
-        width: .3rem;
-        background-color: white;
-        margin: 2rem auto;
-        animation: height4 5s ease-in 4s infinite alternate;
-        /* The animation code */ }
-
-@keyframes height4 {
-  from {
-    height: .1rem; }
-  to {
-    height: 25rem; } }
-      .container .item-4 .links-wrapper .a {
-        margin-top: 1.2rem;
-        font-size: 1.3rem;
-        padding-left: 4.2rem;
-        cursor: pointer; }
-        .container .item-4 .links-wrapper .a:after {
-          content: "";
-          display: block;
-          bottom: 0;
-          right: 0;
-          width: 0%;
-          transition: 0.5s ease;
-          border-bottom: 0.2rem solid #ecf8fb;
-          border-radius: 20%; }
-        .container .item-4 .links-wrapper .a:hover:after {
-          width: 100%; }
-  .container .item-5 {
-    background: black; }
-    .container .item-5 .head-container {
+/* ABOUT PANEL  */
+.about {
+  width: 80rem;
+  height: 41rem;
+  margin: 4rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 264.1rem;
+  transform: translateY(-51rem); }
+  .about .about-panel {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: 40% 60%; }
+  .about .self-portrait {
+    margin: 1rem; }
+    .about .self-portrait .image-wrapper {
+      margin: 1.5rem;
+      height: 35.6rem;
+      border: .3rem solid white; }
+      .about .self-portrait .image-wrapper img {
+        height: 100%;
+        width: 100%; }
+  .about .text-section .bio {
+    height: 15rem;
+    margin: .5rem; }
+    .about .text-section .bio p {
+      padding: .8rem;
+      color: white;
+      font-size: 1.5rem;
+      font-family: 'Share Tech Mono', monospace;
+      line-height: 2.2rem; }
+  .about .shapes-wrapper {
+    height: 23rem;
+    margin: .5rem; }
+    .about .shapes-wrapper .shape-one {
+      height: 16rem;
+      border: .2rem solid white; }
+    .about .shapes-wrapper .shape-two {
+      height: 17rem;
+      width: 43rem;
+      border: .2rem solid white;
+      position: relative;
+      bottom: 15.1rem;
+      left: 1.5rem; }
+    .about .shapes-wrapper .shape-three {
+      height: 18rem;
       width: 40rem;
-      height: 40rem;
-      background: black;
-      margin: 2rem auto 0 auto;
-      animation: opa 2s ease-in; }
-  .container .item-6 {
-    background: black;
-    animation: opa 2s ease-in; }
-    .container .item-6 .line {
-      height: 0px;
-      width: .4rem;
-      background-color: white;
-      margin: auto;
-      animation: height 5s ease-in-out 2s infinite alternate;
-      /* The animation code */ }
-
-@keyframes height {
-  from {
-    height: 0; }
-  to {
-    height: 40rem; } }
+      border: .2rem solid white;
+      position: relative;
+      bottom: 30.7rem;
+      left: 3rem; }
 
 .work-slider-2015 {
   width: 80rem;
@@ -262,7 +221,6 @@ canvas {
       .work-slider-2016 .slide-2016 .right-arrow-2016:hover {
         transform: scaleX(1.1) scaleY(1.1); }
 
-/* SLIDER 2017 */
 .work-slider-2017 {
   width: 80rem;
   height: 40rem;
@@ -321,66 +279,6 @@ canvas {
         padding-right: 1.5rem;
         cursor: pointer; }
         .work-slider-2017 .slide-2017 .legend-arrows-wrapper-2017 .right-arrow-2017:hover {
-          transform: scaleX(1.1) scaleY(1.1); }
-
-.work-slider-clients {
-  width: 80rem;
-  height: 40rem;
-  margin: 4.1rem auto 0 auto;
-  opacity: 0;
-  position: relative;
-  bottom: 132rem;
-  transform: translateY(-50rem); }
-  .work-slider-clients .slide-clients {
-    width: 79rem;
-    height: 41rem;
-    margin: 1rem auto 0 auto;
-    opacity: 1; }
-    .work-slider-clients .slide-clients .img-container-clients {
-      width: 40rem;
-      height: 40rem;
-      margin: auto;
-      border: .3rem solid white;
-      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
-      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
-      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
-      .work-slider-clients .slide-clients .img-container-clients img {
-        width: 100%;
-        height: 100%; }
-    .work-slider-clients .slide-clients .legend-arrows-wrapper-clients {
-      width: 40rem;
-      height: 5rem;
-      margin: 0 auto;
-      text-align: center; }
-      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .left-arrow-clients {
-        display: inline;
-        margin-top: .7rem;
-        margin-right: 1.5rem;
-        float: left;
-        padding-left: 1.5rem;
-        cursor: pointer; }
-        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .left-arrow-clients :hover {
-          transform: scaleX(1.1) scaleY(1.1); }
-      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .paragraph-wrapper-clients {
-        height: 3rem;
-        display: inline-block;
-        padding: 1rem;
-        margin-top: .7rem; }
-        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .paragraph-wrapper-clients p {
-          display: inline;
-          text-align: center;
-          color: white;
-          font-size: 1.5rem;
-          font-family: 'Share Tech Mono', monospace;
-          font-weight: 100;
-          margin-right: 1.5rem; }
-      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .right-arrow-clients {
-        display: inline;
-        float: right;
-        margin-top: .7rem;
-        padding-right: 1.5rem;
-        cursor: pointer; }
-        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .right-arrow-clients:hover {
           transform: scaleX(1.1) scaleY(1.1); }
 
 .work-slider-acid {
@@ -444,6 +342,66 @@ canvas {
         .work-slider-acid .slide-acid .legend-arrows-wrapper-acid .right-arrow-acid:hover {
           transform: scaleX(1.1) scaleY(1.1); }
 
+.work-slider-clients {
+  width: 80rem;
+  height: 40rem;
+  margin: 4.1rem auto 0 auto;
+  opacity: 0;
+  position: relative;
+  bottom: 132rem;
+  transform: translateY(-50rem); }
+  .work-slider-clients .slide-clients {
+    width: 79rem;
+    height: 41rem;
+    margin: 1rem auto 0 auto;
+    opacity: 1; }
+    .work-slider-clients .slide-clients .img-container-clients {
+      width: 40rem;
+      height: 40rem;
+      margin: auto;
+      border: .3rem solid white;
+      -webkit-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      -moz-box-shadow: 0px 0.2rem 2.7rem -0.5rem black;
+      box-shadow: 0px 0.2rem 2.7rem -0.5rem black; }
+      .work-slider-clients .slide-clients .img-container-clients img {
+        width: 100%;
+        height: 100%; }
+    .work-slider-clients .slide-clients .legend-arrows-wrapper-clients {
+      width: 40rem;
+      height: 5rem;
+      margin: 0 auto;
+      text-align: center; }
+      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .left-arrow-clients {
+        display: inline;
+        margin-top: .7rem;
+        margin-right: 1.5rem;
+        float: left;
+        padding-left: 1.5rem;
+        cursor: pointer; }
+        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .left-arrow-clients :hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .paragraph-wrapper-clients {
+        height: 3rem;
+        display: inline-block;
+        padding: 1rem;
+        margin-top: .7rem; }
+        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .paragraph-wrapper-clients p {
+          display: inline;
+          text-align: center;
+          color: white;
+          font-size: 1.5rem;
+          font-family: 'Share Tech Mono', monospace;
+          font-weight: 100;
+          margin-right: 1.5rem; }
+      .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .right-arrow-clients {
+        display: inline;
+        float: right;
+        margin-top: .7rem;
+        padding-right: 1.5rem;
+        cursor: pointer; }
+        .work-slider-clients .slide-clients .legend-arrows-wrapper-clients .right-arrow-clients:hover {
+          transform: scaleX(1.1) scaleY(1.1); }
+
 .work-slider-portraits {
   width: 80rem;
   height: 40rem;
@@ -504,57 +462,94 @@ canvas {
         .work-slider-portraits .slide-portraits .legend-arrows-wrapper-portraits .right-arrow-portraits:hover {
           transform: scaleX(1.1) scaleY(1.1); }
 
-/* ABOUT PANEL  */
-.about {
-  width: 80rem;
-  height: 41rem;
-  margin: 4rem auto 0 auto;
-  opacity: 0;
-  position: relative;
-  bottom: 264.1rem;
-  transform: translateY(-51rem); }
-  .about .about-panel {
-    width: 79rem;
-    height: 41rem;
-    margin: 1rem auto 0 auto;
-    opacity: 1;
-    display: grid;
-    grid-template-columns: 40% 60%; }
-  .about .self-portrait {
-    margin: 1rem; }
-    .about .self-portrait .image-wrapper {
-      margin: 1.5rem;
-      height: 35.6rem;
-      border: .3rem solid white; }
-      .about .self-portrait .image-wrapper img {
-        height: 100%;
-        width: 100%; }
-  .about .text-section .bio {
-    height: 15rem;
-    margin: .5rem; }
-    .about .text-section .bio p {
-      padding: .8rem;
-      color: white;
-      font-size: 1.5rem;
-      font-family: 'Share Tech Mono', monospace;
-      line-height: 2.2rem; }
-  .about .shapes-wrapper {
-    height: 23rem;
-    margin: .5rem; }
-    .about .shapes-wrapper .shape-one {
-      height: 16rem;
-      border: .2rem solid white; }
-    .about .shapes-wrapper .shape-two {
-      height: 17rem;
-      width: 43rem;
-      border: .2rem solid white;
-      position: relative;
-      bottom: 15.1rem;
-      left: 1.5rem; }
-    .about .shapes-wrapper .shape-three {
-      height: 18rem;
+.container {
+  display: grid;
+  grid-template-columns: 12% auto 12%;
+  grid-template-rows: 15% auto 15%;
+  height: 95vh;
+  color: #f9f5e5;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+  .container .item {
+    background: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3.5rem;
+    animation: opa 2s ease-in; }
+    .container .item :hover {
+      cursor: pointer; }
+  .container .item-1 {
+    background: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3.5rem;
+    animation: opa 2s ease-in; }
+  .container a {
+    cursor: default; }
+  .container .line {
+    height: 3.4rem;
+    width: .1rem;
+    background-color: white;
+    margin: .5rem auto;
+    animation: height 3s ease-in 2s infinite normal; }
+  .container .item-2 {
+    text-align: center;
+    background: black;
+    letter-spacing: .2rem;
+    font-family: 'Felipa', cursive; }
+  .container h1 {
+    font-size: 2.5rem;
+    margin-top: 3.5rem;
+    animation: opa 2s ease-in; }
+    .container h1 :hover {
+      cursor: pointer; }
+  .container .item-4 {
+    background: black;
+    animation: opa 2s ease-in; }
+    .container .item-4 .links-wrapper {
+      margin: 0 auto;
+      width: 13rem;
+      height: 13rem; }
+      .container .item-4 .links-wrapper:after {
+        content: "";
+        display: block;
+        height: 0rem;
+        width: .3rem;
+        background-color: white;
+        margin: 2rem auto;
+        animation: height4 5s ease-in 4s infinite alternate; }
+      .container .item-4 .links-wrapper .a {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        padding-left: 4.2rem;
+        cursor: pointer; }
+        .container .item-4 .links-wrapper .a:after {
+          content: "";
+          display: block;
+          bottom: 0;
+          right: 0;
+          width: 0%;
+          transition: 0.5s ease;
+          border-bottom: 0.2rem solid #ecf8fb;
+          border-radius: 20%; }
+        .container .item-4 .links-wrapper .a:hover:after {
+          width: 100%; }
+  .container .item-5 {
+    background: black; }
+    .container .item-5 .head-container {
       width: 40rem;
-      border: .2rem solid white;
-      position: relative;
-      bottom: 30.7rem;
-      left: 3rem; }
+      height: 40rem;
+      background: black;
+      margin: 2rem auto 0 auto;
+      animation: opa 2s ease-in; }
+  .container .item-6 {
+    background: black;
+    animation: opa 2s ease-in; }
+    .container .item-6 .line {
+      height: 0px;
+      width: .4rem;
+      background-color: white;
+      margin: auto;
+      animation: height6 5s ease-in-out 2s infinite alternate; }

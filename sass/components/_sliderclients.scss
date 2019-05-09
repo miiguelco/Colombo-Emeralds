@@ -1,0 +1,50 @@
+//Slider Clients
+.work-slider-clients {
+   width: 80rem;
+   height: 40rem;
+   margin: 4.1rem auto 0 auto;
+   opacity: 0;
+   position: relative;
+   bottom: 132rem;
+   transform: translateY(-50rem);
+
+   & .slide-clients {
+    @include slide;
+
+    & .img-container-clients {
+     @include img-container;
+     & img {
+       @include img-size;
+     }
+   }
+   & .legend-arrows-wrapper-clients {
+     @include arrows-wrapper;
+
+     & .left-arrow-clients {
+       @include left-arrow;
+
+       & :hover {
+         transform: scaleX(1.1) scaleY(1.1);
+       }
+     }
+
+     & .paragraph-wrapper-clients {
+      height: 3rem;
+      display: inline-block;
+      padding: 1rem;
+      margin-top: .7rem;
+      & p {
+        @include legend-p;
+      }
+     }
+
+     & .right-arrow-clients {
+       @include right-arrow;
+
+       &:hover {
+         transform: scaleX(1.1) scaleY(1.1);
+       }
+     }
+   }
+ }
+}

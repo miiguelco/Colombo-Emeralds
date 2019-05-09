@@ -1,0 +1,66 @@
+
+
+  .about {
+     width: 80rem;
+     height: 41rem;
+     margin: 4rem auto 0 auto;
+     opacity: 0;
+     position: relative;
+     bottom: 264.1rem;
+     transform: translateY(-51rem);
+     & .about-panel {
+      width: 79rem;
+      height: 41rem;
+      margin: 1rem auto 0 auto;
+      opacity: 1;
+      display: grid;
+      grid-template-columns: 40% 60%;
+     }
+     & .self-portrait {
+       margin: 1rem;
+       & .image-wrapper {
+         margin: 1.5rem;
+         height: 35.6rem;
+         border: .3rem solid white;
+         & img {
+           height: 100%;
+           width: 100%;
+         }
+       }
+     }
+     & .text-section .bio {
+       height: 15rem;
+       margin: .5rem;
+       & p {
+         padding: .8rem;
+         color: white;
+         font-size: 1.5rem;
+         font-family: 'Share Tech Mono', monospace;
+         line-height: 2.2rem;
+       }
+     }
+     & .shapes-wrapper {
+       height: 23rem;
+       margin: .5rem;
+       & .shape-one {
+         height: 16rem;
+         border: .2rem solid white;
+       }
+       & .shape-two {
+         height: 17rem;
+         width: 43rem;
+         border: .2rem solid white;
+         position: relative;
+         bottom: 15.1rem;
+         left: 1.5rem;
+       }
+       & .shape-three {
+         height: 18rem;
+         width: 40rem;
+         border: .2rem solid white;
+         position: relative;
+         bottom: 30.7rem;
+         left: 3rem;
+      }
+    }
+  }

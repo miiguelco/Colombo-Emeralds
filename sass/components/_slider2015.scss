@@ -1,0 +1,51 @@
+
+
+.work-slider-2015 {
+   width: 80rem;
+   height: 40rem;
+   margin: 1.5rem auto 0 auto;
+   opacity: 0;
+   transform: translateY(-50rem);
+   & .slide {
+    @include slide;
+   }
+     & .img-container {
+      @include img-container;
+      }
+
+      & img {
+        @include img-size;
+      }
+
+      & .legend-arrows-wrapper {
+        @include arrows-wrapper;
+
+        & .paragraph-wrapper {
+         height: 3rem;
+         display: inline-block;
+         margin-top: .7rem;
+         padding: 1rem;
+         font-size: 1.3rem;
+
+         & p {
+           @include legend-p;
+         }
+        }
+      }
+
+      & .left-arrow {
+        @include left-arrow;
+
+        &:hover {
+          transform: scaleX(1.1) scaleY(1.1);
+        }
+      }
+
+      & .right-arrow {
+        @include right-arrow;
+
+        &:hover {
+          transform: scaleX(1.1) scaleY(1.1);
+        }
+      }
+}

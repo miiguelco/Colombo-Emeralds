@@ -1,0 +1,43 @@
+
+.work-slider-portraits {
+   width: 80rem;
+   height: 40rem;
+   margin: 4rem auto 0 auto;
+   opacity: 0;
+   position: relative;
+   bottom: 219.8rem;
+   transform: translateY(-50rem);
+   & .slide-portraits {
+    @include slide;
+    & .img-container-portraits {
+     @include img-container;
+     & img {
+       @include img-size;
+     }
+    }
+    & .legend-arrows-wrapper-portraits {
+      @include arrows-wrapper;
+      & .left-arrow-portraits {
+        @include left-arrow;
+        &:hover {
+          transform: scaleX(1.1) scaleY(1.1);
+        }
+      }
+      & .paragraph-wrapper-portraits {
+       height: 3rem;
+       display: inline-block;
+       padding: 1rem;
+       margin-top: .7rem;
+       & p {
+         @include legend-p;
+       }
+      }
+      & .right-arrow-portraits {
+        @include right-arrow;
+        &:hover {
+          transform: scaleX(1.1) scaleY(1.1);
+        }
+      }
+     }
+   }
+  }

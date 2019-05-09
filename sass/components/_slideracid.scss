@@ -1,0 +1,51 @@
+
+.work-slider-acid {
+   width: 80rem;
+   height: 40rem;
+   margin: 4rem auto 0 auto;
+   opacity: 0;
+   position: relative;
+   bottom: 175.9rem;
+   transform: translateY(-50rem);
+
+   & .slide-acid {
+    @include slide;
+
+    & .img-container-acid {
+     @include img-container;
+     & img {
+       @include img-size;
+     }
+  }
+  & .legend-arrows-wrapper-acid {
+      @include arrows-wrapper;
+
+      & .left-arrow-acid {
+        @include left-arrow;
+        cursor: pointer;
+
+        &:hover {
+          transform: scaleX(1.1) scaleY(1.1);
+        }
+      }
+
+      & .paragraph-wrapper-acid {
+       height: 3rem;
+       display: inline-block;
+       padding: 1rem;
+       margin-top: .7rem;
+       & p {
+         @include legend-p;
+       }
+     }
+
+     & .right-arrow-acid {
+       @include right-arrow;
+
+       &:hover {
+         transform: scaleX(1.1) scaleY(1.1);
+       }
+     }
+   }
+  }
+}

@@ -1,0 +1,128 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 12% auto 12%;
+  grid-template-rows: 15% auto 15%;
+  height: 95vh;
+  color: $color-typo;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: .2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  .item {
+    @include default-item;
+
+    & :hover {
+      cursor: pointer;
+    }
+  }
+
+  .item-1 {
+    background: $background-color;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3.5rem;
+    animation: opa 2s ease-in;
+  }
+
+    & a {
+      cursor: default;
+    }
+
+    & .line {
+      height: 3.4rem;
+      width: .1rem;
+      background-color: white;
+      margin: .5rem auto;
+      animation: height 3s ease-in 2s infinite normal;
+    }
+
+
+  .item-2 {
+    text-align: center;
+    background: $background-color;
+    letter-spacing: .2rem;
+    font-family: 'Felipa', cursive;
+    & h1 {
+      font-size: 2.5rem;
+      margin-top: 3.5rem;
+      animation: opa 2s ease-in;
+
+      & :hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+
+  .item-4 {
+    background: $background-color;
+    animation: opa 2s ease-in;
+
+    & .links-wrapper {
+      margin: 0 auto;
+      width: 13rem;
+      height: 13rem;
+
+      &:after {
+        content: "";
+        display: block;
+        height: 0rem;
+        width: .3rem;
+        background-color: rgb(255, 255, 255);
+        margin: 2rem auto;
+        animation: height4 5s ease-in 4s infinite alternate;
+      }
+
+      & .a {
+        margin-top: 1.2rem;
+        font-size: 1.3rem;
+        padding-left: 4.2rem;
+        cursor: pointer;
+
+        &:after {
+          content: "";
+          display: block;
+          bottom: 0;
+          right: 0;
+          width: 0%;
+          transition: 0.5s ease;
+          border-bottom: .2rem solid rgb(236, 248, 251);
+          border-radius: 20%;
+        }
+
+        &:hover:after {
+           width: 100%;
+        }
+      }
+    }
+  }
+
+  .item-5 {
+    background: $background-color;
+
+    & .head-container {
+      width: 40rem;
+      height: 40rem;
+      background: $background-color;
+      margin: 2rem auto 0 auto;
+      animation: opa 2s ease-in;
+    }
+  }
+
+  .item-6 {
+    background: $background-color;
+    animation: opa 2s ease-in;
+
+    & .line {
+      height: 0px;
+      width: .4rem;
+      background-color: white;
+      margin: auto;
+      animation: height6 5s ease-in-out 2s infinite alternate;
+    }
+  }
+}
