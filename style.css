@@ -47,7 +47,6 @@ canvas {
   opacity: 1;
   display: block; }
 
-/* ABOUT PANEL  */
 .about {
   width: 80rem;
   height: 41rem;
@@ -499,12 +498,12 @@ canvas {
     background: black;
     letter-spacing: .2rem;
     font-family: 'Felipa', cursive; }
-  .container h1 {
-    font-size: 2.5rem;
-    margin-top: 3.5rem;
-    animation: opa 2s ease-in; }
-    .container h1 :hover {
-      cursor: pointer; }
+    .container .item-2 h1 {
+      font-size: 2.5rem;
+      margin-top: 3.5rem;
+      animation: opa 2s ease-in; }
+      .container .item-2 h1 :hover {
+        cursor: pointer; }
   .container .item-4 {
     background: black;
     animation: opa 2s ease-in; }
